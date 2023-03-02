@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8d52891484.js" crossorigin="anonymous"></script>
+ 
+</head>
+<body>
+    <section id="header">
+        <nav>
+            <a href="folio.html" class="logo"><span>S</span>heriff.</a>
+            <div class="nav-links">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Skills</a></li>
+                    <li><a href="#works">works<a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+            </div>
+        </nav>
+
+        <div class="header-text">
+            <p>Frontend Developer</p>
+            <h1>Hi, I'm <span>Sheriff</span><br>Hassan from Nigeria</h1>
+        </div>
+       
+
+    </section>
+          
+    
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"><span>A</span>bout <span>M</span>e</h1>
+                    <p>I am by name Hassan Muhammad sheriff, a frontend developer. I am 21 years of age, born on june 19th 2001,am from nigeria.
+                       Am so glad that am into programming even though am studying a different course,a course not related to computing, 
+                       which is Geography. Am actually still an undergraduate of Ahmadu Bello University, but still planning to go study 
+                       a degree in software engeenering after my geography degree.
+                    </p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links" id="p_skills" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" id="p_experience" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" id="p_education" onclick="opentab('education')">Education</p>
+                            </div>
+                   
+                    <div class="tab-contents hide" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>smart contract</span><br>Building Blockchains </li>
+                            <li><span>repairs</span><br>Computer Engeenering</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents hide" id="experience">
+                        <ul>
+                            <li><span>2020 - current</span><br>Frontend Development training at IAIICT</li>
+                            <li><span>2021 - 2022</span><br>software Project on webdesign at ABU.</li>
+                            <li><span>2022 - 2023</span><br>encounter with website design on business portfolio</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents hide" id="education" >
+                        <ul>
+                            <li><span>2020</span><br>frontend developing course from ABU</li>
+                            <li><span>2022</span><br>Diploma in computer engineering at IAIICT</li>
+                            <li><span>2023</span><br>Degree in BSC Geography.</li> 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+
+
+
+
+
+    
+    <!---------------------services---------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-titlee">My <span>Services</span></h1>
+            <div class="services-list">
+                <div >
+                    <h2>Web Design</h2>
+                    <p>I am at your services when ever you need a website for any business you want to operate</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div >
+                    
+                    <h2>Blockchain Development</h2>
+                    <p>I am at your services when ever you need a blockchain programmer for any smart contract business of your choice</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div >
+                    
+                    <h2>Computer Repairs</h2>
+                    <p>I am at your services when ever you need an engineer for your computer repairss</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    
+
+    
+
+<!----------------------------skills------------------------->
+<div id="portfolio">
+    <div>
+        <h1 class=" sub-titles">My <span>Skills</span></h1>
+        <div class="skills-list">
+            <div class="list">
+                <h2>Web development</h2>
+                <p>I design website of any kinds using html,css and javascript(frontend developer) </p>
+            </div>
+
+            <div class="list">
+                <h2>Smart Contract</h2>
+                <p>I am a blockchain developer and i develop smart contracts of any kinds using react and solidity</p>
+            </div>
+
+            <div class="list">
+                <h2>computer repairs</h2>
+                <p>I am a computer engineer and I fix up both hardware and software problem of a system </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-------------------portfolio-------------------------------->
+<div id="works">
+    <div class="container">
+        <h1 class="sub-titlee">My <span>Work</span></h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/web.jpg" >
+                <div class="layer">
+                    <h3>My Portfolio Design</h3>
+                    <p>This shows you a little about me that is my work,experience, skills and education   </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/dapps.jpg">
+                <div class="layer">
+                    <h3>My dapps</h3>
+                    <p>This shows you my smartcontract works on crypto and my apps with solidity  </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/repairs.jpg">
+                <div class="layer">
+                    <h3>my repair shop</h3>
+                    <p>you can visit my shop to get your laptops and desktops repaired  </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+</div>
+             <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!--------------------contact---------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-titled">Contact <span>Me</span></h1>
+                <p><i class="fa-solid fa-paper-plane"></i> sheriffadeiza10@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 07081792565</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter-square"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-linkedin-square"></i></a>
+                </div>
+                <a  class="btn btn2" href="images/my CV-PDF.pdf" download>Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="input your name" required>
+                    <input type="email" name="Email" placeholder="input your Email" required>
+                    <textarea name="message" rows="6" placeholder="your message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+
+                </form>
+                <span id="msg"></span>
+                
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright &#169; Sheriff. made with <i class="fa-solid fa-heart"></i> My Portfolio</p>
+    </div>
+</div>
+
+
+   
+
+<script>
+    const opentab = (tabname) => {
+    const tabcontents = document.querySelectorAll(".tab-contents")
+    tabcontents.forEach((tab) => {
+        tab.classList.remove("show")
+        tab.classList.add("hide")
+        if (tab.id === tabname){
+            tab.classList.add("show")
+        }
+    })
+}
+
+
+
+</script>
+
+<script>
+    let sidemenu = document.getElementById("sidemenu")
+
+    function showmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function hidemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+    
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx1zsqRub0kDifW0FtbHghEhhIWeg35uxUvy_7jrRsM0zLuFFAQ0wXOkUMSSGBeZGrTEQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => { msg.innerHTML = 'message sent sucessfully'
+        setTimeout (function(){
+            msg.innerHTML = ''
+        },5000)
+        form.reset()
+    })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
