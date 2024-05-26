@@ -10,23 +10,30 @@
  
 </head>
 <body>
-    <section id="header">
-        <nav>
+   
+        <nav class="navbar">
             <a href="folio.html" class="logo"><span>S</span>heriff.</a>
-            <div class="nav-links">
-                <ul id="sidemenu">
+    
+                <ul class="nav-links">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Skills</a></li>
                     <li><a href="#works">works<a></li>
                     <li><a href="#contact">contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
                 </ul>
-                <i class="fa-solid fa-bars" onclick="showmenu()"></i>
-            </div>
-        </nav>
+                
 
+                <div class="menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
+
+
+                
+            
+        </nav>
+        <section id="header">
         <div class="header-text">
             <p>Frontend Developer</p>
             <h1>Hi, I'm <span>Sheriff</span><br>Hassan from Nigeria</h1>
@@ -35,9 +42,7 @@
 
     </section>
           
-    
-
-    <section id="about">
+        <section id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
@@ -217,7 +222,19 @@
     </div>
 </div>
 
+<script>
+   document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navbar = document.querySelector('.navbar');
 
+  menuToggle.addEventListener('click', () => {
+    navbar.classList.toggle('expanded');
+  });
+});
+
+
+
+</script>
    
 
 <script>
@@ -236,17 +253,7 @@
 
 </script>
 
-<script>
-    let sidemenu = document.getElementById("sidemenu")
 
-    function showmenu(){
-        sidemenu.style.right = "0";
-    }
-
-    function hidemenu(){
-        sidemenu.style.right = "-200px";
-    }
-</script>
     
 <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbx1zsqRub0kDifW0FtbHghEhhIWeg35uxUvy_7jrRsM0zLuFFAQ0wXOkUMSSGBeZGrTEQ/exec'

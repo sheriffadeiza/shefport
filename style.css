@@ -13,19 +13,20 @@ body{
     color: #fff;
 }
 
-#header{
-    width:100% ;
-    height: 100vh;
-    background-color: #000;
-    background-position:center;
-    background-size: cover;
 
-}
 
-nav{
+.navbar{
     display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
     padding: 20px;
     margin: 20PX 20px;
+    background-color: white;
+    opacity: 0.8;
+    
+
+    
     
    
 }
@@ -33,7 +34,7 @@ nav{
 .logo{
     font-size: 50px;
     margin-left: 75px;
-    color: #fff;
+    color: #000;
     text-decoration: none;
 
 }
@@ -42,50 +43,47 @@ nav{
 }
 
 .nav-links {
-    margin: auto;
-    align-items: center;
-    margin-right: 35px;
-    position: relative;
+    display: flex;
+    list-style-type: none;
+    margin-top: 20px;
+    margin-left: 30%;
+
     
-    }
-
-
-
-.nav-links ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 0 20px;
-    text-align: right;
-   
-    }
-
-.nav-links ul li a{
-    color: #fff;
+  }
+  
+  .nav-links li {
+    margin-left: 50px;
+    display: inline;
+    
+  }
+  
+  .nav-links li a {
+    color: #000;
     text-decoration: none;
+    font-size: 20px;
     
-}
+    border-radius: 4px;
+  }
+  
+  .nav-links li a:hover {
+    color:salmon;
+  }
+  
 
+#header{
+    width:100% ;
+    
+    background-color: #000;
+    background-position:center;
+    background-size: cover;
 
-.nav-links ul li::after{
-    width: 0;
-    content: '';
-    height: 2px;
-    margin: auto;
-    background: salmon;
-    display: block;
-    transition: 0.5s;
-
-
-}
-
-.nav-links ul li:hover::after{
-    width: 100%;
 }
 
 .header-text{
     margin-top: 15%;
     font-size: 40px;
     padding-left: 10%;
+    
     color: #fff;
 }
 
@@ -99,7 +97,8 @@ span{
 }
 
 
-.about{
+#about{
+    margin-top: 20%;
     padding: 80px;
     color: #fff;
 }
@@ -139,7 +138,18 @@ span{
 
     
 }
-
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-toggle .fa-times {
+    display: none;
+  }
 .tab-links{
     margin-right: 50px;
     font-size: 30px;
@@ -188,12 +198,16 @@ span{
     display: block;
 }
 /*----------------services---------------*/
+
+
+
 .sub-titlee{
     padding: 30px 0;
+    
     margin-left: 45%;
     font-size: 30px;
     font-weight: 500;
-    margin-top: 25%;
+    
 }
 
 
@@ -288,7 +302,7 @@ color: salmon;
     font-size: 14px;
     font-weight: 300;
     padding: 40px;
-    transition: background 0.5s, transform 0.5s;
+    transition: back-ground 0.5s, transform 0.5s;
     margin-left: 20px;
    
     
@@ -491,9 +505,11 @@ form .btn2{
 
 .nav-links .fa-solid{
     display: none;
+    
 }
 
-@media only screen and (max-width: 700px){
+
+@media only screen and (max-width: 760px){
 
 .header-text{
     font-size: 30px;
@@ -505,43 +521,46 @@ form .btn2{
     font-size: 20px;
 }
 
-.nav-links .fa-solid{
-    display:block;
-    font-size: 20px;
-    color: #fff;
-   
+.nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    color: #000;
+    background-color: white;
+    width: 20%;
+    text-align: right;
+    padding-right: 10px;
     
-    
-}
+  }
 
-.nav-links ul{
-    background: salmon;
-    position: fixed;
-    top: 0;
-    right: -200;
-    width: 200px;
-    height: 100vh;
-    text-align: left;
-    padding-top: 50px;
-    z-index: 2;
-    transition: right 0.5s;
-}
+  .nav-links li {
+    margin: 0;
+    padding-top: 20px;
 
-.nav-links ul li{
-    display: inline-block;
-    margin: 30px;
-    
-}
+  }
 
-.nav-links .fa-solid{
-    position:absolute ;
-    top: 25px;
-    left: 25px;
-    cursor: pointer;
-    
-    
-}
+  
+.menu-toggle {
+    display: block;
+    color: #000;
+  }
 
+  .navbar.expanded .nav-links {
+    display: flex;
+  }
+
+  .navbar.expanded .menu-toggle .fa-bars {
+    display: none;
+  }
+  .menu-toggle .fa-xmark{
+    display: none;
+  }
+
+  .navbar.expanded .menu-toggle .fa-xmark {
+    display: block;
+  }
 .logo{
     margin-left: 10px;
 }
@@ -575,6 +594,7 @@ form .btn2{
 
 .about-col-1, .about-col-2 {
     flex-basis: 150%;
+   
     
 }
 
@@ -596,13 +616,18 @@ form .btn2{
 }
 
 
-
-
-    
-}
-
 #msg{
     color: #61b752;
     margin-top: -40px;
     display: block;
 }
+
+form input, form textarea{
+    margin-left: 10px;
+}
+
+    
+}
+
+
+
